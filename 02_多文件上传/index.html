@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多文件夹上传</title>
+    <style>
+      .drop {
+        width: 400px;
+        height: 200px;
+        margin-top: 30px;
+        border: 1px dashed #ccc;
+        text-align: center;
+        line-height: 200px;
+        font-size: 14px;
+        color: #999;
+        cursor: pointer;
+        border-radius: 10px;
+        &:focus,
+        &:hover {
+          border-color: #1890ff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="input" multiple webkitdirectory />
+
+    <button id="btn">showDirectoryPicker() 方法上传</button>
+
+    <div class="drop">
+      拖拽文件来上传
+      <input type="type" id="drop-btn" style="display: none" />
+    </div>
+
+    <ul class="file-list"></ul>
+
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
