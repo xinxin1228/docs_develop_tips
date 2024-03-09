@@ -1,0 +1,23 @@
+{
+  "name": "03_项目中使用环境变量",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:win": "set NODE_ENV=dev && nodemon src/index.js",
+    "dev:mac": "export NODE_ENV=dev && nodemon src/index.js",
+    "dev": "cross-env NODE_ENV=prod PORT=3000 nodemon src/index.js",
+    "start": "node src/index.js",
+    "start:dev": "cross-env NODE_ENV=dev node src/index.js",
+    "start:prod": "cross-env NODE_ENV=prod node src/index.js",
+    "start:test": "cross-env NODE_ENV=test node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
+  }
+}
