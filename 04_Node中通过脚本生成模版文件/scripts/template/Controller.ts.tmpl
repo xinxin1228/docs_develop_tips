@@ -1,0 +1,10 @@
+import { <<%= name %>>Service } from '../service/index.<<%= lang %>>'
+
+export default class <<%= name %>>Controller {
+  static <<%= name %>>Service: <<%= name %>>Service = new <<%= name %>>Service()
+
+  hi() {
+    const result = <<%= name %>>Controller.<<%= name %>>Service.hi()
+    console.log(result)
+  }
+}

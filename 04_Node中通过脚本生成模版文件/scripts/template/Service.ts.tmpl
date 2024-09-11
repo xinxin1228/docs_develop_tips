@@ -1,0 +1,9 @@
+import { <<%= name %>>Dao } from '../dao/index.<<%= lang %>>'
+
+export default class <<%= name %>>Service {
+  static <<%= name %>>Dao: <<%= name %>>Dao = new <<%= name %>>Dao()
+
+  hi(): string {
+    return <<%= name %>>Service.<<%= name %>>Dao.hi()
+  }
+}
