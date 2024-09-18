@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/app1:
+    dependencies:
+      '@monorepo/common':
+        specifier: workspace:^
+        version: link:../common
+
+  packages/app2:
+    dependencies:
+      '@monorepo/common':
+        specifier: workspace:^
+        version: link:../common
+
+  packages/common: {}
